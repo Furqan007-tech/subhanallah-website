@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - SubhanAllah stationary and Gift Centre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</header>
+<body>
+    <div class="container">
+     <div class="navbar">
+        <div class="logo">
+            <img src="https://img.freepik.com/premium-photo/room-with-lot-toys-large-shelf-with-stuffed-animal-it_1153744-138027.jpg?semt=ais_hybrid&w=740&q=80" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+        <img src="https://cdn-icons-png.flaticon.com/512/3142/3142740.png" width="30px" height="30px">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-iisu7RI3KlV1_jfj9-8MWZBCLVnAi4yAPA&s" class="menu-icon" onclick="menutoggle()" >
+
+     </div>
+     
+
+    </div>
+
+
+<!--Account page-->
+<div class="Account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="https://muffingroup.com/blog/wp-content/uploads/2024/02/toy.jpg" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="Login()">Login</span>
+                        <span onclick="Register()">Register</span>
+                        <hr id="Indicator">
+
+                    </div>
+                    <form id="loginform">
+                        <input type="text" placeholder="Username">
+                        <input type="Password" placeholder="Password">
+                        <button type="Submit" class="btn">Login</button>
+                        <a href="">Forgot password</a>
+                    </form>
+                    <form id="Registrationform">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="email">
+                        <input type="Password" placeholder="Password">
+                        <button type="Submit" class="btn">Register</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+ 
+
+<!--footer-->
+   <div class="footer">
+       <div class="container">
+           <div class="row">
+                <div class="footer-col-1">
+                    <h3>Join our Facebook</h3>
+
+                </div>
+                <div class="footer-col-2">
+                    <h3>Follow us For Better Products</h3>
+                    <p>Our pourpose is to give the best product</p>
+
+
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                    </ul>
+
+                </div>
+                <div class="footer-col-4">
+                    <h3> Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+
+                </div>
+
+
+           </div>
+
+       </div>
+   </div>
+<!-- js for toggle form-->
+
+    <script>
+        var loginform = document.getElementById("LoginForm");
+        var Registrationform = document.getElementById("Registrationform");
+        var Indicator = document.getElementById("Indicator");
+
+            function Register(){
+                Registrationform.style.transform = "translateX(0px)";
+                loginform.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+            }
+            function Login(){
+                Registrationform.style.transform = "translateX(300px)";
+                loginform.style.transform = "translateX(300px)";
+                loginform.style.transform = "translateX(0px)";
+            }
+    </script>
+
+
+</body>
+</html>
